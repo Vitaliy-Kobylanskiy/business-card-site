@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import headerLogo from '../../../img/header-logo.png';
 import cl from './Header.module.scss';
 
@@ -14,12 +14,12 @@ const Header = () => {
         <header className={`${cl.header} ${isOpen ? cl.open : ''}`}>
             <div className={cl.container}>
                 <div className={cl.logoWrapper}>
-                    <a className={cl.logoLink} href="/">
+                    <Link className={cl.logoLink} to='/'>
                         <div className={cl.logoBlock}>
                             <img className={cl.headerLogo} src={headerLogo} alt="logo" />
                             <p className={cl.logoText}>Професійний шлях</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <nav className={cl.navBar}>
                     <ul className={cl.list}>
