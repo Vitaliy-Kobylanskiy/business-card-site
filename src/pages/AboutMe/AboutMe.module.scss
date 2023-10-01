@@ -1,0 +1,150 @@
+@import '../../styles/variables.scss';
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $primary-color;
+    padding: 50px 10px 50px 10px;
+}
+
+.container {
+    width: 1000px;
+
+    .block:nth-child(2n) {
+        background-color: $aboutMe-section-color;
+    }
+
+    .block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        border: 1px solid white;
+        border-radius: 20px;
+        position: relative;
+        background-color: $aboutMe-secondary-section-color;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        margin-bottom: 50px;
+    }
+
+    .block::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
+    }
+
+    .block:hover {
+        /* transform: scale(1.02); */
+        filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 1));
+        transition: .2s ease-in-out;
+    }
+
+    .textWrapper {
+        padding: 50px;
+    }
+
+    .text {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .photoWrapper {
+        max-width: 250px;
+        min-width: 250px;
+        position: relative;
+
+        & *:first-child {
+            border-radius: 20px;
+        }
+    }
+
+    .photoWrapper:hover .photo {
+        transform: scale(1.05);
+    }
+
+    .photo {
+        border: 4px solid #fff;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .black {
+        border: 4px solid black;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    .textDescription {
+        text-align: center;
+        margin: 10px 0;
+        font-weight: 600
+    }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .main {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .container {
+
+        .block {
+            display: block;
+
+            &:nth-child(1) {
+                padding-bottom: 15px;
+            }
+        }
+
+        .textWrapper {
+            padding: 0;
+
+            & * {
+                font-size: 12px;
+            }
+
+            & ul {
+                max-width: 500px;
+            }
+        }
+
+        .photoWrapper {
+            margin: auto;
+            max-width: 200px;
+            min-width: 200px;
+        }
+
+        .photo {
+            margin-bottom: 15px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .black {
+            margin-top: 15px;
+        }
+
+        .description {
+            max-width: 400px;
+            margin: auto;
+        }
+    }
+}

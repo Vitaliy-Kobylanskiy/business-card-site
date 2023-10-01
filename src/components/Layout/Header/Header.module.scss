@@ -1,0 +1,221 @@
+@import '../../../styles/variables.scss';
+
+.header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    background: $primary-color;
+
+    .container {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logoWrapper {
+        padding: 15px 0;
+        z-index: 1;
+    }
+
+    .logoBlock {
+        display: flex;
+        align-items: center;
+        min-width: 290px;
+        filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 1));
+    }
+
+    .headerLogo {
+        width: 65px;
+        height: 48px;
+        margin-right: 15px;
+    }
+
+    .logoText {
+        color: white;
+        font-size: 20px;
+    }
+
+    .logoLink {
+        display: block;
+    }
+
+    .navBar {
+        width: 100%;
+        display: flex;
+    }
+
+    .list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .item {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+
+    .link {
+        color: white;
+        position: relative;
+        font-size: 20px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background-color: rgb(255, 255, 255);
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .activeLink {
+        color: white;
+        font-size: 20px;
+        transition: 0.2s ease-in;
+        transform: translateY(-5px);
+    }
+
+    .burgerWrapper {
+        display: none;
+    }
+}
+
+// Адаптив 
+
+@media (min-width:320px) and (max-width:650px) {
+    .header {
+
+        .navBar {
+            display: none;
+            width: 100%;
+            background: var(--bg1, linear-gradient(102deg, #2C2C2C 1.56%, #1C1C1C 95.55%));
+            position: absolute;
+            right: -100%;
+            top: 0;
+            padding-top: 80px;
+            z-index: 1;
+        }
+
+        .logoBlock {
+            min-width: 250px;
+        }
+
+        .logoText {
+            font-size: 16px;
+        }
+
+        .logoWrapper {
+            z-index: 2;
+        }
+
+        .list {
+            display: block;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .link {
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .activeLink {
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+            transform: translateY(0);
+        }
+
+        .burgerWrapper {
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .burgerBtn {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border: none;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+
+            & * {
+                border-radius: 5px;
+                display: block;
+                background-color: white;
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                top: 20px;
+                right: 7px;
+                transition: opacity 0.25s, transform 0.5s;
+                will-change: transform;
+            }
+
+            & *:nth-child(1) {
+                transform: translateY(-7px);
+            }
+
+            & *:nth-child(3) {
+                transform: translateY(7px);
+            }
+        }
+    }
+
+    .header.open .burgerBtn span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .header.open .burgerBtn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header.open .burgerBtn span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .header.open .navBar {
+        display: block;
+        right: 0;
+    }
+}
+
+@media (min-width:651px) and (max-width:800px) {
+    .container {
+
+        .logoBlock {
+            min-width: 250px;
+        }
+
+        .logoText {
+            font-size: 16px;
+        }
+
+        .link {
+            font-size: 16px;
+        }
+
+        .activeLink {
+            font-size: 16px;
+        }
+    }
+}

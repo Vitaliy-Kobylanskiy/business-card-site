@@ -1,0 +1,140 @@
+@import '../../styles/variables.scss';
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $primary-color;
+    padding: 50px 10px 50px 10px;
+}
+
+.container {
+    width: 1000px;
+
+    .item {
+        display: flex;
+        background: $secondary-color;
+        box-shadow: 0px 4px 15px 0px rgba(27, 27, 27, 0.28);
+        padding: 30px;
+        border-radius: 30px;
+        max-width: 100%;
+        margin: 0 0 25px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 1));
+            transition: .2s ease-in-out;
+        }
+    }
+
+    .linkWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .link {
+        display: block;
+        min-width: 270px;
+        max-width: 270px;
+        min-height: 250px;
+    }
+
+    .photoSite {
+        max-width: 100%;
+        height: 250px;
+        border-radius: 30px;
+    }
+
+    .description {
+        flex-grow: 1;
+        margin: 0 0 0 30px;
+    }
+
+    .descriptionTitle {
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+
+    .descriptionList {
+        list-style-type: '\227B';
+        color: white;
+        font-size: 14px;
+    }
+
+    .descriptionText {
+        margin: 0 0 10px 10px;
+    }
+
+    .descriptionBtn {
+        text-align: center;
+
+        .descriptionLink {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #676767;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin: 0 0 15px 15px;
+        }
+
+        .descriptionLink:hover {
+            background-color: #474747;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// Адаптив 
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .container {
+
+        .item {
+            display: block;
+        }
+
+        .linkWrapper {
+            margin: 0 0 15px 0;
+        }
+
+        .link {
+            max-width: 275px;
+            min-height: 200px;
+            align-self: center;
+        }
+
+        .photoSite {
+            height: 200px;
+        }
+
+        .descriptionTitle {
+            font-size: 14px;
+        }
+
+        .descriptionList {
+            max-width: 450px;
+            margin: 0 auto;
+            font-size: 12px;
+        }
+
+        .descriptionBtn {
+            text-align: center;
+
+            .descriptionLink {
+                font-size: 12px;
+                padding: 7px 12px;
+            }
+        }
+    }
+}
