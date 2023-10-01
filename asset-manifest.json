@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/business-card-site/static/css/main.b181e8fa.css",
+    "main.js": "/business-card-site/static/js/main.c412400e.js",
+    "static/media/medical-appointment.png": "/business-card-site/static/media/medical-appointment.a7b0ceec326ed5afa2c7.png",
+    "static/media/classic-wood-stile.png": "/business-card-site/static/media/classic-wood-stile.51afa66fa1313a347d1e.png",
+    "static/media/best-friends.png": "/business-card-site/static/media/best-friends.6bd4b456aa48a28a085f.png",
+    "static/media/business-card.png": "/business-card-site/static/media/business-card.b5a262653369a862fc23.png",
+    "static/media/mail-img.png": "/business-card-site/static/media/mail-img.6635216783eec4f4ff36.png",
+    "static/media/my-comments-list.png": "/business-card-site/static/media/my-comments-list.0b4409b09129d660e3b9.png",
+    "static/media/photo1.jpg": "/business-card-site/static/media/photo1.860efa9d3fdfbecffb43.jpg",
+    "static/media/photo4.jpg": "/business-card-site/static/media/photo4.35bd9cf9f7d759250346.jpg",
+    "static/media/photo2.jpg": "/business-card-site/static/media/photo2.cb797ba7577bf3b72870.jpg",
+    "static/media/inst-img.png": "/business-card-site/static/media/inst-img.c3d9d3c9bd5e5c180bab.png",
+    "static/media/photo3.jpg": "/business-card-site/static/media/photo3.99e1720ed1795b5587e3.jpg",
+    "static/media/telegramm-img.png": "/business-card-site/static/media/telegramm-img.0161297455d8cc648760.png",
+    "static/media/phone-img.png": "/business-card-site/static/media/phone-img.f2bf32bf4b5437c77901.png",
+    "index.html": "/business-card-site/index.html",
+    "main.b181e8fa.css.map": "/business-card-site/static/css/main.b181e8fa.css.map",
+    "main.c412400e.js.map": "/business-card-site/static/js/main.c412400e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b181e8fa.css",
+    "static/js/main.c412400e.js"
+  ]
+}
