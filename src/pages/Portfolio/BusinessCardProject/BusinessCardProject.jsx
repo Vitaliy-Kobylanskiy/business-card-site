@@ -6,7 +6,7 @@ const BusinessCardProject = () => {
     return (
         <li className={cl.item}>
             <div className={cl.linkWrapper}>
-                <a className={cl.link} href="https://vitaliy-kobylanskiy.github.io/best-friend-social/#/login/" target="_blank" rel="noopener noreferrer">
+                <a className={cl.link} href="https://vitaliy-kobylanskiy.github.io/business-card-site/" target="_blank" rel="noopener noreferrer">
                     <img className={cl.photoSite} src={businessCard} alt="business-card" />
                 </a>
             </div>
@@ -37,11 +37,11 @@ const BusinessCardProject = () => {
                 </ul>
                 <h2 className={cl.descriptionTitle}>Щоб завітати на сайт тисни на картинку, або:</h2>
                 <div className={cl.descriptionBtn}>
-                    <a className={cl.descriptionLink} href="https://vitaliy-kobylanskiy.github.io/best-friend-social/#/login/" target="_blank" rel="noopener noreferrer">Перейди за посиланням</a>
+                    <a className={cl.descriptionLink} href="https://vitaliy-kobylanskiy.github.io/business-card-site/" target="_blank" rel="noopener noreferrer">Перейди за посиланням</a>
                 </div>
                 <h2 className={cl.descriptionTitle}>Код проекту можна переглянути тут:</h2>
                 <div className={cl.descriptionBtn}>
-                    <a className={cl.descriptionLink} href="https://github.com/Vitaliy-Kobylanskiy/best-friend-social" target="_blank" rel="noopener noreferrer">Перейди за посиланням</a>
+                    <a className={cl.descriptionLink} href="https://github.com/Vitaliy-Kobylanskiy/business-card-site" target="_blank" rel="noopener noreferrer">Перейди за посиланням</a>
                 </div>
                 <h2 className={cl.descriptionTitle}>Весь GitHub можна переглянути тут:</h2>
                 <div className={cl.descriptionBtn}>
