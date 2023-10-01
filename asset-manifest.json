@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/business-card-site/static/css/main.b181e8fa.css",
-    "main.js": "/business-card-site/static/js/main.09c01bbe.js",
+    "main.js": "/business-card-site/static/js/main.0b37a440.js",
     "static/media/medical-appointment.png": "/business-card-site/static/media/medical-appointment.a7b0ceec326ed5afa2c7.png",
     "static/media/classic-wood-stile.png": "/business-card-site/static/media/classic-wood-stile.51afa66fa1313a347d1e.png",
     "static/media/best-friends.png": "/business-card-site/static/media/best-friends.6bd4b456aa48a28a085f.png",
@@ -17,10 +17,10 @@
     "static/media/phone-img.png": "/business-card-site/static/media/phone-img.f2bf32bf4b5437c77901.png",
     "index.html": "/business-card-site/index.html",
     "main.b181e8fa.css.map": "/business-card-site/static/css/main.b181e8fa.css.map",
-    "main.09c01bbe.js.map": "/business-card-site/static/js/main.09c01bbe.js.map"
+    "main.0b37a440.js.map": "/business-card-site/static/js/main.0b37a440.js.map"
   },
   "entrypoints": [
     "static/css/main.b181e8fa.css",
-    "static/js/main.09c01bbe.js"
+    "static/js/main.0b37a440.js"
   ]
 }
